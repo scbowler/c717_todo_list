@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getAll } from '../actions'; // '../actions/index'
 import ListItem from './list_item';
@@ -20,6 +21,9 @@ class TodoList extends Component {
         return (
             <div>
                 <h1 className="text-center mt-3">Todo List</h1>
+                <div className="justify-content-center d-flex my-3">
+                    <Link to="/add-todo" className="btn btn-outline-primary">Add Item</Link>
+                </div>  
                 <ul className="list-group">
                     {todosList}
                 </ul>
