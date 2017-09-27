@@ -10,8 +10,6 @@ class TodoList extends Component {
     }
 
     render(){
-        console.log('TodoList Props:', this.props);
-
         const { todos } = this.props;
 
         const todosList = todos.map((item, index) => {
